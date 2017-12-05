@@ -15,6 +15,8 @@
         <link rel="stylesheet" href="css/main.css">
 
         <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+        <!-- <script src="js/sillySayingGenerator.js"></script> and this is where I was originally trying to 
+        run the code from this javascript file until I finally found the fix in this website: https://stackoverflow.com/questions/27343338/why-does-this-work-as-internal-script-but-not-when-you-use-an-external-javascrip-->
     </head>
     <body>
         <!--[if lt IE 8]>
@@ -24,7 +26,8 @@
         <div class="header-container">
             <header class="wrapper clearfix">
                 <h1 class="title">LMMPORTFOLIOPARTY</h1>
-                <h6 class="title">Upsetting by design!</h6>
+                <!--<h6 class="title" id="randomText"></h6>-->
+                <div class="title" id="randomText"></div>
                 <nav>
                     <ul>
                         <li><a href="#">nav ul li a</a></li>
@@ -92,5 +95,6 @@
             r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
             ga('create','UA-XXXXX-X','auto');ga('send','pageview');
         </script>
+        <script src="js/sillySayingGenerator.js"></script>
     </body>
 </html>
